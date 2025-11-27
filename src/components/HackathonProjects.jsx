@@ -8,7 +8,9 @@ const hackathons = [
         event: "Hackathon Project",
         description: "An innovative solution designed to assist non-verbal autistic children. This project focuses on accessibility and communication, leveraging technology to bridge gaps and provide a voice to those who need it most.",
         tags: ["Accessibility", "Social Impact", "Hackathon"],
-        link: "https://github.com/ammar/amplify_GDG", // Placeholder link based on user description, user should verify
+        link: "https://github.com/ammarjmahmood/Amplify-GDGS",
+        demo: "https://www.youtube.com/watch?v=v_Y_EmeTrDs",
+        devpost: "https://devpost.com/software/omoi-unlocking-the-silent-world",
         image: "https://placehold.co/600x400/1e293b/orange?text=OMOI"
     }
 ];
@@ -50,9 +52,21 @@ const HackathonProjects = () => {
                                                     </Badge>
                                                 ))}
                                             </div>
-                                            <Button href={project.link} target="_blank" variant="outline-success" className="font-mono hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]">
-                                                View Project
-                                            </Button>
+                                            <div className="flex flex-wrap gap-3">
+                                                <Button href={project.link} target="_blank" variant="outline-success" className="font-mono hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]">
+                                                    View Code
+                                                </Button>
+                                                {project.demo && (
+                                                    <Button href={project.demo} target="_blank" variant="outline-danger" className="font-mono hover:shadow-[0_0_15px_rgba(239,68,68,0.4)] border-red-500 text-red-400 hover:bg-red-500 hover:text-white">
+                                                        Watch Demo
+                                                    </Button>
+                                                )}
+                                                {project.devpost && (
+                                                    <Button href={project.devpost} target="_blank" variant="outline-info" className="font-mono hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white">
+                                                        DevPost
+                                                    </Button>
+                                                )}
+                                            </div>
                                         </Card.Body>
                                     </Col>
                                 </Row>
