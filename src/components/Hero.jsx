@@ -28,8 +28,8 @@ const Hero = () => {
                             Passionate about penetration testing, network security, and building resilient systems.
                         </p>
                         <div className="flex gap-4">
-                            <Button href="#projects" variant="outline-info" size="lg" className="rounded-full px-8 py-3 font-semibold hover:bg-cyan-500 hover:text-white transition-all">
-                                View Work
+                            <Button href="https://drive.google.com/file/d/1v8ofvJFv4wSS026L29MsWZz78dG6gAZZ/view?usp=sharing" target="_blank" variant="outline-info" size="lg" className="rounded-full px-8 py-3 font-semibold hover:bg-cyan-500 hover:text-white transition-all">
+                                Resume
                             </Button>
                             <Button href="#contact" variant="primary" size="lg" className="rounded-full px-8 py-3 font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 border-none hover:shadow-lg hover:shadow-cyan-500/30 transition-all">
                                 Contact Me

@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 
 const skills = [
-    { category: "Languages", items: ["Python", "C", "Java", "SQL", "JavaScript", "HTML/CSS"] },
+    { category: "Languages", items: ["Python", "C", "Java", "SQL", "JavaScript", "HTML/CSS", "PHP"] },
+    { category: "Web Development", items: ["React", "Tailwind CSS", "Bootstrap", "Vite", "REST APIs"] },
     { category: "Systems & Networking", items: ["Linux/Unix", "Scapy", "Logging", "CLI tools", "Wireshark"] },
     { category: "Frameworks & Libraries", items: ["Flask", "Streamlit", "Pandas", "NumPy", "Matplotlib"] },
     { category: "Testing & Quality", items: ["Unit Testing", "API Testing", "Pytest", "Flask testing utilities"] },
@@ -65,15 +66,6 @@ const Skills = () => {
                             className="font-mono border-green-500 text-green-400 hover:bg-green-500 hover:text-black hover:shadow-[0_0_20px_rgba(34,197,94,0.5)] transition-all px-8"
                         >
                             Email
-                        </Button>
-                        <Button
-                            href="https://drive.google.com/file/d/1v8ofvJFv4wSS026L29MsWZz78dG6gAZZ/view?usp=sharing"
-                            target="_blank"
-                            variant="outline-success"
-                            size="lg"
-                            className="font-mono border-green-500 text-green-400 hover:bg-green-500 hover:text-black hover:shadow-[0_0_20px_rgba(34,197,94,0.5)] transition-all px-8"
-                        >
-                            Resume
                         </Button>
                     </div>
                 </div>

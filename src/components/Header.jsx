@@ -14,6 +14,7 @@ const Header = () => {
                         <Nav.Link href="#home" className="text-gray-300 hover:text-green-400 transition-colors hover:shadow-[0_0_10px_rgba(34,197,94,0.5)]">Home</Nav.Link>
                         <Nav.Link href="#skills" className="text-gray-300 hover:text-green-400 transition-colors hover:shadow-[0_0_10px_rgba(34,197,94,0.5)]">Skills</Nav.Link>
                         <Nav.Link href="#projects" className="text-gray-300 hover:text-green-400 transition-colors hover:shadow-[0_0_10px_rgba(34,197,94,0.5)]">Projects</Nav.Link>
+                        <Nav.Link href="#hackathons" className="text-gray-300 hover:text-green-400 transition-colors hover:shadow-[0_0_10px_rgba(34,197,94,0.5)]">Hackathons</Nav.Link>
                         <Nav.Link href="#contact" className="text-gray-300 hover:text-green-400 transition-colors hover:shadow-[0_0_10px_rgba(34,197,94,0.5)]">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

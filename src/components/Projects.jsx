@@ -21,10 +21,10 @@ const projects = [
     {
         id: 3,
         title: "E-Commerce Website",
-        description: "A secure full-stack e-commerce solution. Focus on secure authentication, input validation, and protection against common web vulnerabilities.",
-        tags: ["Web Security", "PHP", "React"],
+        description: "A frontend showcase demonstrating modern web development skills. Features a responsive UI built with React, demonstrating component reusability, state management, and interactive user flows.",
+        tags: ["React", "Frontend", "UI/UX", "JavaScript"],
         link: "https://github.com/AneeshNagdev/E-Commerce-Website",
-        image: "https://placehold.co/600x400/1e293b/cyan?text=Secure+E-Commerce"
+        image: "https://placehold.co/600x400/1e293b/cyan?text=Frontend+E-Commerce"
     },
     {
         id: 4,
@@ -41,11 +41,11 @@ const Projects = () => {
         <section id="projects" className="py-20 bg-gray-800 text-white">
             <Container>
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold mb-4 text-green-400 font-mono">&lt;Security_Projects /&gt;</h2>
+                    <h2 className="text-4xl font-bold mb-4 text-green-400 font-mono">&lt;Personal_Projects /&gt;</h2>
                     <p className="text-gray-400 max-w-2xl mx-auto font-mono">
             // Executing project showcase...
                         <br />
-            // Displaying recent security implementations.
+            // Displaying recent implementations.
                     </p>
                 </div>
                 <Row>
