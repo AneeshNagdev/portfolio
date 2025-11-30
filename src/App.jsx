@@ -18,7 +18,7 @@ function App() {
         <Contact />
       </main>
       <footer className="bg-gray-950 py-8 text-center text-gray-500 border-t border-gray-800">
-        <p>&copy; {new Date().getFullYear()} Aneesh. Built with React, Tailwind, Bootstrap & PHP.</p>
+        <p>&copy; {new Date().getFullYear()} Aneesh.</p>
       </footer>
     </div>
   )
