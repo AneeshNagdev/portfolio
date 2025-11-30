@@ -19,7 +19,7 @@ const Hero = () => {
                             Aneesh
                         </h1>
                         <h3 className="text-2xl md:text-3xl text-gray-300 mb-6">
-                            Cybersecurity Specialist
+                            Cybersecurity Enthusiast
                         </h3>
                         <p className="text-gray-400 text-lg mb-8 max-w-lg leading-relaxed">
                             3rd Year Computer Science Student at <span className="text-cyan-400">Toronto Metropolitan University</span>.
