@@ -33,6 +33,16 @@ const projects = [
         tags: ["Automation", "Python", "Networking"],
         link: "https://github.com/AneeshNagdev/YouTube-Content-Downloader",
         image: "https://placehold.co/600x400/1e293b/green?text=Content+Downloader"
+    },
+    {
+        id: 5,
+        title: "OMOI",
+        description: "An innovative solution designed to assist non-verbal autistic children. This project focuses on accessibility and communication, leveraging technology to bridge gaps and provide a voice to those who need it most.",
+        tags: ["Accessibility", "Social Impact", "Hackathon"],
+        link: "https://github.com/ammarjmahmood/Amplify-GDGS",
+        demo: "https://www.youtube.com/watch?v=v_Y_EmeTrDs",
+        devpost: "https://devpost.com/software/omoi-unlocking-the-silent-world",
+        image: "https://placehold.co/600x400/1e293b/orange?text=OMOI"
     }
 ];
 
@@ -71,7 +81,19 @@ const Projects = () => {
                                             </Badge>
                                         ))}
                                     </div>
-                                    <Button href={project.link} target="_blank" variant="outline-success" className="w-full mt-auto font-mono hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]">View Code</Button>
+                                    <div className="mt-auto flex flex-col gap-2">
+                                        <Button href={project.link} target="_blank" variant="outline-success" className="w-full font-mono hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]">View Code</Button>
+                                        {project.demo && (
+                                            <Button href={project.demo} target="_blank" variant="outline-danger" className="w-full font-mono hover:shadow-[0_0_15px_rgba(239,68,68,0.4)] border-red-500 text-red-400 hover:bg-red-500 hover:text-white">
+                                                Watch Demo
+                                            </Button>
+                                        )}
+                                        {project.devpost && (
+                                            <Button href={project.devpost} target="_blank" variant="outline-info" className="w-full font-mono hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white">
+                                                DevPost
+                                            </Button>
+                                        )}
+                                    </div>
                                 </Card.Body>
                             </Card>
                         </Col>
