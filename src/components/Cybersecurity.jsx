@@ -11,6 +11,16 @@ const labs = [
         link: "https://seedsecuritylabs.org/Labs_20.04/Files/Firewall_Evasion/Firewall_Evasion.pdf",
         report: "https://drive.google.com/file/d/1vdyW8hzZJE1fYHLFGOapBDqzxrQS39XV/view?usp=drive_link",
         readmore: "https://seedsecuritylabs.org/Labs_20.04/Networking/Firewall_Evasion/"
+    },
+    {
+        id: 2,
+        title: "Buffer Overflow Vulnerability (Set-UID)",
+        description: "Investigated buffer overflow vulnerabilities in Set-UID programs. Exploited memory corruption to gain root privileges by injecting shellcode and manipulating the return address, demonstrating the critical importance of bounds checking and safe coding practices.",
+        tools: ["GDB", "GCC", "C", "Shellcode", "Ubuntu (Seed Lab VM)", "Stack Smashing", "Memory Layout"],
+        image: "/portfolio/buffer-overflow.png",
+        link: "https://seedsecuritylabs.org/Labs_20.04/Files/Buffer_Overflow_Setuid/Buffer_Overflow_Setuid.pdf",
+        report: "https://drive.google.com/file/d/1UhJhSaNK4egveB6V9-H78n2SQmP3nq5H/view?usp=sharing",
+        readmore: "https://seedsecuritylabs.org/Labs_20.04/Software/Buffer_Overflow_Setuid/"
     }
 ];
 
