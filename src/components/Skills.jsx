@@ -1,13 +1,13 @@
 import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const skills = [
-    { category: "Languages", items: ["Python", "C", "Java", "SQL", "JavaScript", "HTML/CSS", "PHP"] },
-    { category: "Web Development", items: ["React", "Tailwind CSS", "Bootstrap", "Vite", "REST APIs"] },
-    { category: "Systems & Networking", items: ["Linux/Unix", "Scapy", "Logging", "CLI tools", "Wireshark"] },
-    { category: "Frameworks & Libraries", items: ["Flask", "Streamlit", "Pandas", "NumPy", "Matplotlib"] },
+    { category: "Languages", items: ["Python", "C", "Java", "SQL", "JavaScript", "HTML/CSS", "PHP", "Assembly", "Shellcode"] },
+    { category: "Web Development", items: ["React", "Tailwind CSS", "Bootstrap", "Vite", "REST APIs", "Flask"] },
+    { category: "Systems & Networking", items: ["Linux/Unix", "Scapy", "Logging", "CLI tools", "Wireshark", "GDB", "Set-UID", "Buffer Overflow", "Memory Layout"] },
+    { category: "Frameworks & Libraries", items: ["Streamlit", "Pandas", "NumPy", "Matplotlib"] },
     { category: "Testing & Quality", items: ["Unit Testing", "API Testing", "Pytest", "Flask testing utilities"] },
-    { category: "Tools & Development", items: ["Git/GitHub", "VS Code", "IntelliJ IDEA", "JIRA", "AWS", "Azure"] }
+    { category: "Tools & Development", items: ["Git/GitHub", "VS Code", "IntelliJ IDEA", "JIRA", "AWS", "Azure", "Seed Labs VM"] }
 ];
 
 const Skills = () => {
@@ -26,7 +26,7 @@ const Skills = () => {
                     </p>
                 </div>
 
-                <Row className="mb-16 justify-content-center">
+                <Row className="justify-content-center">
                     {skills.map((skillGroup, index) => (
                         <Col md={6} lg={4} key={index} className="mb-6">
                             <Card className="h-100 bg-gray-950 border border-green-500/30 shadow-[0_0_15px_rgba(34,197,94,0.1)] hover:shadow-[0_0_25px_rgba(34,197,94,0.3)] transition-all duration-300">
@@ -46,29 +46,6 @@ const Skills = () => {
                         </Col>
                     ))}
                 </Row>
-
-                <div className="text-center bg-gray-950/80 p-8 rounded-2xl border border-green-500/30 backdrop-blur-sm max-w-4xl mx-auto">
-                    <h3 className="text-2xl font-bold mb-6 text-white font-mono">Establish Connection</h3>
-                    <div className="flex flex-wrap justify-center gap-4">
-                        <Button
-                            href="https://linkedin.com/in/aneesh-nagdev"
-                            target="_blank"
-                            variant="outline-success"
-                            size="lg"
-                            className="font-mono border-green-500 text-green-400 hover:bg-green-500 hover:text-black hover:shadow-[0_0_20px_rgba(34,197,94,0.5)] transition-all px-8"
-                        >
-                            LinkedIn
-                        </Button>
-                        <Button
-                            href="mailto:aneesh.ca255@gmail.com"
-                            variant="outline-success"
-                            size="lg"
-                            className="font-mono border-green-500 text-green-400 hover:bg-green-500 hover:text-black hover:shadow-[0_0_20px_rgba(34,197,94,0.5)] transition-all px-8"
-                        >
-                            Email
-                        </Button>
-                    </div>
-                </div>
             </Container>
         </section>
     );

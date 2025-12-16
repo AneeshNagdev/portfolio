@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Cybersecurity from './components/Cybersecurity'
+import Creativity from './components/Creativity'
 import Contact from './components/Contact'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Skills />
         <Projects />
         <Cybersecurity />
+        <Creativity />
         <Contact />
       </main>
       <footer className="bg-gray-950 py-8 text-center text-gray-500 border-t border-gray-800">

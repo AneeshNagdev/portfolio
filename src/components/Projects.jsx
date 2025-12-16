@@ -5,26 +5,28 @@ const projects = [
     {
         id: 1,
         title: "Intrusion Detection System",
-        description: "Developed a Python-based Intrusion Detection System (IDS) using Scapy to capture, analyze, and classify network packets, improving anomaly-detection accuracy by ~35%. Designed modular logging pipelines generating 500+ structured logs per run with <2s latency.",
+        description: "Developed a Python-based Intrusion Detection System (IDS) using Scapy to capture, analyze, and classify network packets. Designed modular logging pipelines to generate structured logs efficiently.",
         tags: ["Python", "Scapy", "Logging", "CLI", "Network Security"],
         link: "https://github.com/AneeshNagdev/Simple-IDS",
-        image: "https://placehold.co/600x400/1e293b/red?text=IDS+System"
+        image: "/portfolio/ids_project.png"
     },
     {
         id: 2,
         title: "Password Strength Analyzer",
-        description: "Designed a Flask-based web application analyzing 5,000+ passwords using entropy scoring and Regex validation. Implemented NIST and OWASP-aligned password policies, reducing weak credential usage by ~30%.",
+        description: "Designed a Flask-based web application analyzing passwords using entropy scoring and Regex validation. Implemented NIST and OWASP-aligned password policies to identify and mitigate weak credentials.",
         tags: ["Python", "Flask", "Regex", "HTML/CSS", "Security"],
         link: "https://github.com/AneeshNagdev/Password-Strength-Analyzer",
-        image: "https://placehold.co/600x400/1e293b/purple?text=Password+Analyzer"
+        demo: "https://checkmypass.vercel.app/",
+        image: "/portfolio/password_project.png"
     },
     {
         id: 3,
         title: "E-Commerce Website",
-        description: "A frontend showcase demonstrating modern web development skills. Features a responsive UI built with React, demonstrating component reusability, state management, and interactive user flows.",
-        tags: ["React", "Frontend", "UI/UX", "JavaScript"],
+        description: "A responsive frontend showcase built entirely with HTML, CSS, and JavaScript to demonstrate core web development skills without frameworks. Features a fully responsive UI with interactive user flows.",
+        tags: ["HTML/CSS", "JavaScript", "Frontend", "UI/UX"],
         link: "https://github.com/AneeshNagdev/E-Commerce-Website",
-        image: "https://placehold.co/600x400/1e293b/cyan?text=Frontend+E-Commerce"
+        demo: "https://urbangentry.vercel.app/",
+        image: "/portfolio/ecommerce_project.png"
     },
     {
         id: 4,
@@ -32,7 +34,7 @@ const projects = [
         description: "Automated content retrieval tool. Demonstrates understanding of HTTP protocols, API interaction, and data handling.",
         tags: ["Automation", "Python", "Networking"],
         link: "https://github.com/AneeshNagdev/YouTube-Content-Downloader",
-        image: "https://placehold.co/600x400/1e293b/green?text=Content+Downloader"
+        image: "/portfolio/youtube_project.png"
     },
     {
         id: 5,
@@ -42,7 +44,7 @@ const projects = [
         link: "https://github.com/ammarjmahmood/Amplify-GDGS",
         demo: "https://www.youtube.com/watch?v=v_Y_EmeTrDs",
         devpost: "https://devpost.com/software/omoi-unlocking-the-silent-world",
-        image: "https://placehold.co/600x400/1e293b/orange?text=OMOI"
+        image: "/portfolio/omoi_project.png"
     }
 ];
 
@@ -62,7 +64,8 @@ const Projects = () => {
                     {projects.map((project) => (
                         <Col lg={6} key={project.id} className="mb-8">
                             <Card className="h-100 bg-gray-900 border-gray-700 hover:border-green-500 transition-all duration-300 hover:-translate-y-2 shadow-lg">
-                                <div className="overflow-hidden h-48">
+                                <div className="overflow-hidden h-48 relative group">
+                                    <div className="absolute inset-0 bg-green-500/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
                                     <Card.Img
                                         variant="top"
                                         src={project.image}
@@ -81,15 +84,15 @@ const Projects = () => {
                                             </Badge>
                                         ))}
                                     </div>
-                                    <div className="mt-auto flex flex-col gap-2">
-                                        <Button href={project.link} target="_blank" variant="outline-success" className="w-full font-mono hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]">View Code</Button>
+                                    <div className="mt-auto flex gap-2">
+                                        <Button href={project.link} target="_blank" variant="outline-success" className="flex-1 font-mono hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]">View Code</Button>
                                         {project.demo && (
-                                            <Button href={project.demo} target="_blank" variant="outline-danger" className="w-full font-mono hover:shadow-[0_0_15px_rgba(239,68,68,0.4)] border-red-500 text-red-400 hover:bg-red-500 hover:text-white">
-                                                Watch Demo
+                                            <Button href={project.demo} target="_blank" variant="outline-danger" className="flex-1 font-mono hover:shadow-[0_0_15px_rgba(239,68,68,0.4)] border-red-500 text-red-400 hover:bg-red-500 hover:text-white">
+                                                Live Demo
                                             </Button>
                                         )}
                                         {project.devpost && (
-                                            <Button href={project.devpost} target="_blank" variant="outline-info" className="w-full font-mono hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white">
+                                            <Button href={project.devpost} target="_blank" variant="outline-info" className="flex-1 font-mono hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white">
                                                 DevPost
                                             </Button>
                                         )}
