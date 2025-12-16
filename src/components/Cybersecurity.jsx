@@ -21,6 +21,26 @@ const labs = [
         link: "https://seedsecuritylabs.org/Labs_20.04/Files/Buffer_Overflow_Setuid/Buffer_Overflow_Setuid.pdf",
         report: "https://drive.google.com/file/d/1UhJhSaNK4egveB6V9-H78n2SQmP3nq5H/view?usp=sharing",
         readmore: "https://seedsecuritylabs.org/Labs_20.04/Software/Buffer_Overflow_Setuid/"
+    },
+    {
+        id: 3,
+        title: "RSA Encryption & Digital Signature",
+        description: "Implemented RSA encryption and digital signature algorithms. Explored key generation, message signing, and verification processes, gaining deep insights into public-key cryptography and algebraic number theory mechanics.",
+        tools: ["C", "OpenSSL", "BIGNUM", "Public-Key Cryptography", "Digital Signatures", "Encryption/Decryption", "Ubuntu (Seed Lab VM)"],
+        image: "/portfolio/rsa-lab.png",
+        link: "https://seedsecuritylabs.org/Labs_20.04/Files/Crypto_RSA/Crypto_RSA.pdf",
+        report: "https://drive.google.com/file/d/1lGAspz6jBo-wGb_xrBPbNQpvHXlEpP20/view?usp=sharing",
+        readmore: "https://seedsecuritylabs.org/Labs_20.04/Crypto/Crypto_RSA/"
+    },
+    {
+        id: 4,
+        title: "Public Key Infrastructure (PKI)",
+        description: "Functioned as a Certificate Authority (CA) to design and secure a digital infrastructure. Created digital certificates, enabled HTTPS, and executed Man-in-the-Middle (MITM) attacks to demonstrate the critical role of certificate validation in establishing network trust.",
+        tools: ["OpenSSL", "Certificate Authority", "HTTPS", "Apache", "Docker", "MITM", "Wireshark", "Ubuntu (Seed Lab VM)"],
+        image: "/portfolio/pki-lab.png",
+        link: "https://seedsecuritylabs.org/Labs_20.04/Files/Crypto_PKI/Crypto_PKI.pdf",
+        report: "https://drive.google.com/file/d/1ay2ThNvz5ZJFmtwtqaHSGBG5sslk5YbP/view?usp=sharing",
+        readmore: "https://seedsecuritylabs.org/Labs_20.04/Crypto/Crypto_PKI/"
     }
 ];
 
