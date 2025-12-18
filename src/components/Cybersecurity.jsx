@@ -41,6 +41,16 @@ const labs = [
         link: "https://seedsecuritylabs.org/Labs_20.04/Files/Crypto_PKI/Crypto_PKI.pdf",
         report: "https://drive.google.com/file/d/1ay2ThNvz5ZJFmtwtqaHSGBG5sslk5YbP/view?usp=sharing",
         readmore: "https://seedsecuritylabs.org/Labs_20.04/Crypto/Crypto_PKI/"
+    },
+    {
+        id: 5,
+        title: "Packet Sniffing & Spoofing",
+        description: "Implemented a packet sniffer using Scapy to capture and analyze network traffic. Focused on understanding the underlying mechanisms of packet interception and manipulation, completing the initial phase of the lab (Task 2.1A).",
+        tools: ["Python", "Scapy", "Wireshark", "Ubuntu (Seed Lab VM)", "Network Protocols"],
+        image: "/portfolio/sniffing-spoofing.png",
+        link: "https://seedsecuritylabs.org/Labs_20.04/Files/Sniffing_Spoofing/Sniffing_Spoofing.pdf",
+        report: "https://drive.google.com/file/d/1uuzuQH2oWjj_s2-7aJxhV1dIAseUWIAb/view?usp=sharing",
+        readmore: "https://seedsecuritylabs.org/Labs_20.04/Networking/Sniffing_Spoofing/"
     }
 ];
 
