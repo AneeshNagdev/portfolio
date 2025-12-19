@@ -45,6 +45,14 @@ const projects = [
         demo: "https://www.youtube.com/watch?v=v_Y_EmeTrDs",
         devpost: "https://devpost.com/software/omoi-unlocking-the-silent-world",
         image: "/portfolio/omoi_project.png"
+    },
+    {
+        id: 6,
+        title: "Gmail Phishing Detector",
+        description: "A Chrome extension designed to analyze Gmail emails for phishing risks in real-time. Features SPA navigation detection, email state awareness, and a localized analysis engine to provide clear security warnings.",
+        tags: ["JavaScript", "Chrome Extension", "Manifest V3", "Network Security", "Phishing Detection"],
+        link: "https://github.com/AneeshNagdev/Gmail-Phishing-Detector.git",
+        image: "/portfolio/gmail_phishing_project.png"
     }
 ];
 
